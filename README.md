@@ -129,7 +129,7 @@ Agent 会把待验证代码写入临时目录，但以 `project_dir` 作为工�
 ```cmd
 cd F:\project\formal-math-agent
 copy config.example.json config.json
-set DEEPSEEK_API_KEY=你的密钥
+set API_KEY=你的密钥
 set PYTHONPATH=%CD%\src
 python -m formal_math_agent.cli solve --config config.json --problem "证明：对任意实数 x，x^2 ≥ 0。"
 ```
