@@ -1,0 +1,10 @@
+name = "formal_math_lean"
+version = "0.1.0"
+defaultTargets = ["FormalMathLean"]
+
+[[lean_lib]]
+name = "FormalMathLean"
+
+[[require]]
+name = "mathlib"
+path = "../../mathlib4"

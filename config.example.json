@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "kind": "openai",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-v4-flash",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.25,
+    "max_tokens": 8000,
+    "timeout_seconds": 180
+  },
+  "lean": {
+    "command": [
+      "Your lake.exe path here",
+      "env",
+      "lean"
+    ],
+    "project_dir": "Your project directory here",
+    "timeout_seconds": 60,
+    "imports": ["Mathlib"]
+  },
+  "search": {
+    "formalization_candidates": 3,
+    "max_node_attempts": 3,
+    "max_replans": 2,
+    "max_model_calls": 40
+  },
+  "inspection": {
+    "max_problem_chars": 3000,
+    "max_steps_per_chunk": 8,
+    "max_chunk_chars": 9000,
+    "max_context_items": 8,
+    "max_lean_feedback_chars": 1000
+  },
+  "logging": {"runs_dir": "runs"}
+}
