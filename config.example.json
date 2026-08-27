@@ -1,9 +1,9 @@
 {
   "provider": {
     "kind": "openai",
-    "base_url": "https://api.deepseek.com",
-    "model": "deepseek-v4-flash",
-    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "your-base-url",
+    "model": "your-model",
+    "api_key_env": "API_KEY",
     "temperature": 0.25,
     "max_tokens": 8000,
     "timeout_seconds": 180
